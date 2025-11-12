@@ -30,4 +30,24 @@ car1.displayInfo();
 // Try calling it using both the class and an instance — see what happens.
 
 // console.log(car1.numberOfWheel)   // it give undefined 
-console.log(Car.numberOfWheel());
+// console.log(Car.numberOfWheel());
+
+// -----------------------XXXXXX--------------------------XXXXXXX----------------
+
+// Inheritance
+// 👉 Create a class ElectricCar that extends Car. Add one extra property batteryLife and a method displayBattery() that prints the battery life.
+
+class ElectricCar extends Car {
+  constructor(brand, model, year, batteryLife) {
+    super(brand, model, year);
+    this.batteryLife = batteryLife;
+  }
+  displayBattery(){
+console.log(`Battery life of your ${this.brand} ${this.model} is ${this.batteryLife} years.`);
+  }
+}
+
+let car4 = new ElectricCar("Tesla", "Model 3",2024, 5);
+console.log(car4);
+
+car4.displayBattery()
