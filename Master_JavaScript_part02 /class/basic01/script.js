@@ -42,8 +42,15 @@ class ElectricCar extends Car {
     super(brand, model, year);
     this.batteryLife = batteryLife;
   }
-  displayBattery(){
-console.log(`Battery life of your ${this.brand} ${this.model} is ${this.batteryLife} years.`);
+  displayBattery() {
+    console.log(
+      `Battery life of your ${this.brand} ${this.model} is ${this.batteryLife} years.`
+    );
+  }
+  displayInfo(){
+    super.displayInfo();
+    console.log(`Battery life: ${this.batteryLife} years.`);
+    
   }
 }
 
@@ -51,3 +58,7 @@ let car4 = new ElectricCar("Tesla", "Model 3",2024, 5);
 console.log(car4);
 
 car4.displayBattery()
+
+// Override method
+// 👉 In ElectricCar, override displayInfo() to also show battery life (but still use the parent’s version inside).
+car4.displayInfo()
