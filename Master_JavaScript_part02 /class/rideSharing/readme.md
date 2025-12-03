@@ -57,5 +57,5 @@ Create a Ride object
 Return error if no driver available
 Methods:
 static createRide(rider, destination)
-static findDriver(riderLocation)
+static findDriver(riderLocation) 
 static getAllRides()

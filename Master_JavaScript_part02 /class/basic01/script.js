@@ -59,6 +59,8 @@ console.log(car4);
 
 car4.displayBattery()
 
+// -----------------------XXXXXX--------------------------XXXXXXX----------------
+
 // Override method
 // 👉 In ElectricCar, override displayInfo() to also show battery life (but still use the parent’s version inside).
 car4.displayInfo()
